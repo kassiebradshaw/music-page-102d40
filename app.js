@@ -7,7 +7,9 @@
 
 //---------------------------------------------------------------------------------
 
-// -------- DECLARING THE FUNCTION --------
+// HOW DO WE USE FUNCTIONS??
+
+// Declaring the function...
 
 // Ask the user what time it is, and give them a message with conditional logic
 function askTime(){
@@ -29,28 +31,31 @@ function askTime(){
     return message;          // return the message from the function
 };
 
-// ------------------------ INVOKING THE FUNCTION (referred to as calling it, means to use it) -------------------------------- 
+// Invoking the function (referred to as calling it, means to use it)...
 
 askTime();
 
-// ------------------------------------------------ TALKING ABOUT PARAMETERS ------------------------------------------
+// Understanding parameters & arguments
+// PARAMETERS --> The placeholders you give a function when you are declaring the function
+// ARGUMENTS --> The actual data you pass to the function when you are invoking it
 
 //  parameters go in parenthesis --> tell the function it will need extra data, and give it a "placeholder" name
 function addNumbers(x, y){    // I'm going to need 2 numbers, I don't know what they are yet so I'll call them x & z 
     return x + y;             // add the 2 numbers together and return the result 
 }
 
-// ---------------------------------------- INVOKE FUNCTION WITH PARAMETERS --------------------------------
-
+// Invoking a function and passing it ARGUMENTS
 let sum = addNumbers(10, 35); // invoke the function with the 2 numbers I want to add together. Assign that result to a variable.
 console.log(sum);             // show what the sum of the function was
 
-// ------------------------------ ASK THE USER THEIR FAV COLOR ------------------------------------
 
+//---------------------------------------------------------------------------------
+
+
+// ASK THE USER THEIR FAV COLOR 
     // function to ask the user their fav color
     // If the user's fav color (turned lowercase) is yellow, say "Mine too!"
     // otherwise say "That's still a nice color"
-
 function favColor(){
     let usersColor = prompt("What is your favorite color?");
     
@@ -81,7 +86,7 @@ function showPic(){
     }
 }
 
-// ----------- EXAMPLE OF HOW YOU CAN CONTROL WHEN YOUR FUNCTIONS RUN & WHERE (SCRIPT) ---------------------
+// ----------- EXAMPLE OF HOW YOU CAN CONTROL WHEN YOUR FUNCTIONS RUN (SCRIPT) ---------------------
 //
 // alert("Hi everyone!")
 // askTime();
